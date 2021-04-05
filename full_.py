@@ -10,6 +10,7 @@ def find_path_r(current: int, start_point: int, is_visited: np.array, matrix: np
     is_visited[current] = 1
     way.append(current)
     if np.sum(is_visited) == is_visited.size and matrix[current][start_point]:
+        way.append(start_point)
         return way
     for i in range(0, matrix[current].size):
         if not is_visited[i] and matrix[current][i]:
