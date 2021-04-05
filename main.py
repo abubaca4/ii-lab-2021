@@ -10,7 +10,9 @@ con_count = random.randint(min_contact(person_count),
 data = gen_data_garanted_pass(person_count, con_count)
 result_1 = brute_force(0, data)
 print(result_1)
-draw_graph(data, result_1)
+if result_1:
+    draw_graph(data, result_1)
 result_2 = optimized(0, data)
 print(result_2)
-draw_graph(data, result_2)
+if result_2:
+    draw_graph(data, result_2)
