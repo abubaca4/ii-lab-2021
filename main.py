@@ -34,8 +34,8 @@ def get_stat(person_count: int, try_count: int):
         result_2 = optimized(0, data)
         res_2 += result_2[1] / try_count
 
-    print(res_1)
-    print(res_2)
+    print(person_count/res_1)
+    print(person_count/res_2)
 
 
-get_stat(10, 500)
+get_stat(13, 1000)
