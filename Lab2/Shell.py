@@ -142,7 +142,7 @@ while(True):
 
         if new_goal:
             break
-        # уменьшить количество непроверенных правил
+        # decrease count of unchecked rules
         remainingRules -= 1
         conditions = cr['LHS']
         # for each parameter of checked rules
@@ -181,8 +181,5 @@ while(True):
         if remainingRules == 0 and not new_goal:
             curr_goal = goals.pop()
             checked_goals.append(curr_goal)
-           # print ('The knowledge base does not contain information about this phone: ' + curr_goal)
-            print('База знаний не содержит информацию об этом виде спорта: ')
+            print('База знаний не содержит информацию об этом виде спорта')
     print('-'*100)
-
-# Android -> all y
